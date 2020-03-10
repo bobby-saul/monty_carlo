@@ -5,36 +5,59 @@
         <meta name="viewport" content="width=device-width">
     </head>
     <body>
-        <div class="Score">
-            <div class="Keep">
-                <div class="Games">0</div>
-                <div class="Wins">0</div>
-                <div class="Percentage">N/A</div>
+        <div class="Body-Container">
+            <h1>Monty Carlo</h1>
+            <div class="Scoreboard">
+                <h2>Score</h2>
+                <div id="Keep" class="Score">
+                    <h3 class="Title">Keep</h3>
+                    <div class="Games">Games: 0</div>
+                    <div class="Wins">Wins: 0</div>
+                    <div class="Percentage">Percentage: N/A</div>
+                </div>
+                <div id="Swap" class="Score">
+                    <h3 class="Title">Swap</h3>
+                    <div class="Games">Games: 0</div>
+                    <div class="Wins">Wins: 0</div>
+                    <div class="Percentage">Percentage: N/A</div>
+                </div>
+                <div id="Random" class="Score">
+                    <h3 class="Title">Random</h3>
+                    <div class="Games">Games: 0</div>
+                    <div class="Wins">Wins: 0</div>
+                    <div class="Percentage">Percentage: N/A</div>
+                </div>
+                <div id="Player" class="Score">
+                    <h3 class="Title">Player</h3>
+                    <div class="Games">Games: 0</div>
+                    <div class="Wins">Wins: 0</div>
+                    <div class="Percentage">Percentage: N/A</div>
+                </div>
+                <button class="Button">Clear</button>
             </div>
-            <div class="Swap">
-                <div class="Games">0</div>
-                <div class="Wins">0</div>
-                <div class="Percentage">N/A</div>
+            <div class="Simulation">
+                <h2>Simulate</h2>
+                <div class="Input-Wrapper">
+                    <label for="Keep-Number">Number to keep:</label><input id="Keep-Number" type="number" value="100">
+                </div>
+                <div class="Input-Wrapper">
+                    <label for="Swap-Number">Number to swap:</label><input id="Swap-Number" type="number" value="100">
+                </div>
+                <div class="Input-Wrapper">
+                    <label for="Random-Number">Number to decide randomly:</label><input id="Random-Number" type="number" value="100">
+                </div>
+                <button class="Button">Simulate</button>
             </div>
-            <button class="Button">Clear</button>
-        </div>
-        <div class="Simulation">
-            <div class="Input-Wrapper">
-                <label for="Keep-Number">Number to Keep:</label><input id="Keep-Number" type="number">
+            <div class="Game">
+                <h2>Play</h2>
+                <div class="Game-Message">Choose a door</div>
+                <div class="Door-Wrapper">
+                    <button door-number="1" class="Door">Door 1</button>
+                    <button door-number="2" class="Door">Door 2</button>
+                    <button door-number="3" class="Door">Door 3</button>
+                </div>
+                <button id="Reset" class="Button">Reset</button>
             </div>
-            <div class="Input-Wrapper">
-                <label for="Swap-Number">Number to Swap:</label><input id="Swap-Number" type="number">
-            </div>
-            <button class="Button">Simulate</button>
-        </div>
-        <div class="Game">
-            <div class="Game-Message">Choose a door</div>
-            <div class="Door-Wrapper">
-                <button id="Door-1" class="Door">Door 1</button>
-                <button id="Door-1" class="Door">Door 2</button>
-                <button id="Door-1" class="Door">Door 3</button>
-            </div>
-            <button id="Reset" class="Button">Reset</button>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="app.js"></script>

@@ -5,3 +5,112 @@ Purple #A599B5
 Dark Purple #25283D
 Dark Grey #474448
 */
+
+/* Globals */
+body {
+    margin: 2rem;
+    font-size: 16px;
+    font-family: monospace;
+    color: #25283D;
+    background-color: #A599B5;
+}
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+h3 {
+    font-size: 1.17rem;
+    margin: 0.25rem 0;
+}
+input {
+    width: 5rem;
+    font-size: 1rem;
+    vertical-align: middle;
+    border: 1px solid #25283D;
+    border-radius: 5px;
+    padding: 0.25rem;
+    margin-left: 0.25rem;
+}
+.Body-Container {
+    max-width: 42rem;
+    margin: auto;
+}
+.Button {
+    cursor: pointer;
+    display: block;
+    background: #FFF;
+    border: 1px solid #25283D;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 1rem auto;
+    padding: 0.25rem 1rem;
+}
+.Button:hover,
+.Button:focus {
+    box-shadow:  0px  0px 3px 1px #252525;
+}
+
+/* Scoreboard */
+.Scoreboard {
+    margin: 1rem 0;
+    border: 2px solid #25283D;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: #DAD7CD;
+}
+.Score {
+    display: inline-block;
+    width: 45%;
+    margin: 1rem 0;
+    padding-right: 1rem;
+}
+
+/* Simulation */
+.Simulation {
+    margin: 1rem 0;
+    border: 2px solid #25283D;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: #DAD7CD;
+}
+.Input-Wrapper {
+    margin: 0.5rem 0;
+}
+
+/* Game */
+.Game {
+    margin: 1rem 0;
+    border: 2px solid #25283D;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: #DAD7CD;
+}
+.Door-Wrapper {
+    margin: 1rem 0;
+}
+.Door {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    width: 30%;
+    height: 12rem;
+    background-color: #FFF;
+    border: 2px solid #25283D;
+    border-radius: 5px;
+}
+.Door.Disabled {
+    cursor: no-drop;
+    background-color: #474448;
+}
+.Door.Selected {
+    border-bottom-color: #A599B5;
+    border-bottom-width: 5px;
+}
+.Game-Message {
+    text-align: center;
+}
