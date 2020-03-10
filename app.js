@@ -42,28 +42,28 @@
     function drawScore () {
         $("#Keep .Games").text("Games: " + score.keep.games);
         $("#Keep .Wins").text("Wins: " + score.keep.wins);
-        if (score.keep.wins > 0) {
+        if (score.keep.games > 0) {
             $("#Keep .Percentage").text("Percentage: " + Math.round(100 * score.keep.wins / score.keep.games) + "%");
         } else {
             $("#Keep .Percentage").text("Percentage: N/A");
         }
         $("#Swap .Games").text("Games: " + score.swap.games);
         $("#Swap .Wins").text("Wins: " + score.swap.wins);
-        if (score.swap.wins > 0) {
+        if (score.swap.games > 0) {
             $("#Swap .Percentage").text("Percentage: " + Math.round(100 * score.swap.wins / score.swap.games) + "%");
         } else {
             $("#Swap .Percentage").text("Percentage: N/A");
         }
         $("#Random .Games").text("Games: " + score.random.games);
         $("#Random .Wins").text("Wins: " + score.random.wins);
-        if (score.random.wins > 0) {
+        if (score.random.games > 0) {
             $("#Random .Percentage").text("Percentage: " + Math.round(100 * score.random.wins / score.random.games) + "%");
         } else {
             $("#Random .Percentage").text("Percentage: N/A");
         }
         $("#Player .Games").text("Games: " + score.player.games);
         $("#Player .Wins").text("Wins: " + score.player.wins);
-        if (score.player.wins > 0) {
+        if (score.player.games > 0) {
             $("#Player .Percentage").text("Percentage: " + Math.round(100 * score.player.wins / score.player.games) + "%");
         } else {
             $("#Player .Percentage").text("Percentage: N/A");
