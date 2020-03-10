@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Monty Carlo Problem</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div class="Score">
+            <div class="Keep">
+                <div class="Games">0</div>
+                <div class="Wins">0</div>
+                <div class="Percentage">N/A</div>
+            </div>
+            <div class="Swap">
+                <div class="Games">0</div>
+                <div class="Wins">0</div>
+                <div class="Percentage">N/A</div>
+            </div>
+            <button class="Button">Clear</button>
+        </div>
+        <div class="Simulation">
+            <div class="Input-Wrapper">
+                <label for="Keep-Number">Number to Keep:</label><input id="Keep-Number" type="number">
+            </div>
+            <div class="Input-Wrapper">
+                <label for="Swap-Number">Number to Swap:</label><input id="Swap-Number" type="number">
+            </div>
+            <button class="Button">Simulate</button>
+        </div>
+        <div class="Game">
+            <div class="Game-Message">Choose a door</div>
+            <div class="Door-Wrapper">
+                <button id="Door-1" class="Door">Door 1</button>
+                <button id="Door-1" class="Door">Door 2</button>
+                <button id="Door-1" class="Door">Door 3</button>
+            </div>
+            <button id="Reset" class="Button">Reset</button>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
