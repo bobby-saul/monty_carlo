@@ -169,9 +169,9 @@
         } else {
             $(".Game-Message").text("Do you swap?");
             if (Math.random() > 0.5) {
-                $(".Door").not("[door-number='" + winningDoor + "']").not(".Selected").first().addClass("Disabled");
+                $(".Door").not("[door-number='" + winningDoor + "']").not(".Selected").first().addClass("Disabled").off("click");
             } else {
-                $(".Door").not("[door-number='" + winningDoor + "']").not(".Selected").last().addClass("Disabled");
+                $(".Door").not("[door-number='" + winningDoor + "']").not(".Selected").last().addClass("Disabled").off("click");
             }
         }
     }
